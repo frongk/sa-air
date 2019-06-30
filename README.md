@@ -26,5 +26,4 @@ http://home.chpc.utah.edu/~u0553130/Brian_Blaylock/hrrr_script_tips.html
 SA Trip Data for Intersection Traffic Information (need to script a pull)
 https://gis.sanantonio.gov/Satrip/satripdata.html
 
-### TODO
-- add weekday whoops.py to air_monitoring preprocessing
+**Note:** Code is missing data path because repo will be too large. If you are interested in reproducing this map, send me a DM and I will be happy to help.
