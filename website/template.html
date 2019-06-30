@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>San Antonio Air Quality</title>
+
+<style>
+body {
+  background-color: white;
+}
+
+h1 {
+  color: #303030;
+  font-family: "Arial", sans-serif;
+}
+h2 {
+  color: #303030;
+  font-family: "Arial", sans-serif;
+}
+p {
+  font-family: "Arial", sans-serif;
+}
+a {
+  font-family: "Arial", sans-serif;
+  font-color:#df3131;
+}
+ul {
+  font-family: "Arial", sans-serif;
+}
+li {
+  font-family: "Arial", sans-serif;
+}
+#maincontent {
+  margin-left: 10px;
+}
+</style>
+
+</head>
+
+<body>
+<div id="maincontent">
+  <h1>San Antonio Air Quality Map</h1>
+  <img src='https://www.civtech-sa.com/wp-content/uploads/2018/01/civtechSA-2-2.png' height="200px" width="200px">
+  <h2>CivTechSA Datathon - Team Jellyfish</h2>
+  <iframe src="template_files/map.html" width="100%" height="820" frameborder="0"></iframe> 
+  <p>The map above depicts variations in <a href="https://blissair.com/what-is-pm-2-5.htm">air pollution</a> on a day with relatively bad pollution in San Antonio. Mousing over a particular point reveals what the average 2.5 micrometer particulate matter (PM2.5) level is in a specific location. 
+  
+  All points on the map have been generated using an XGBoost model that approximates local air pollution levels using hyper-local data points. These localized data inputs to the model are:
+  </p>
+  <ul>
+    <li>Elevation</li>
+    <li>Temperature</li>
+    <li>Wind Speed</li>
+    <li>Energy Meter Readings</li>
+    <li>Traffic Conditions</li>
+    <li>Month of the Year</li>
+    <li>Day of the Week</li>
+    <li>Time of Day</li>
+  </ul>
+  <p>With this model, we arrive at one of the highest resolution depictions of air pollution that has ever been generated for the City of San Antonio! The model also empowers prediction of the future state of air pollution in the city. It can answer questions like:</p> 
+  <ul>
+  <li>"What will pollution look like if traffic increases in this intersection by 20 percent?"</li>
+  <li>"How will global warming influence air pollution in the city?"</li>
+  <li>"How will future energy usage change in this neighborhood correlate with pollution levels?"</li>
+  </ul>
+
+  <p>This same methodology can be used to generate high resolution maps and make predictions about the future state of other pollutants such as ozone.</p> 
+  
+  <p><a href="https://github.com/frongk/sa-air">Github Project</a></p>
+  <p>Created by Frank DeVilbiss and Rongrong Wei</p>
+
+</div>
+
+</body></html>
